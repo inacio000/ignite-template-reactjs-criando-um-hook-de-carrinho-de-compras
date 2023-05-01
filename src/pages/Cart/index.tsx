@@ -8,6 +8,7 @@ import {
 // import { useCart } from '../../hooks/useCart';
 // import { formatPrice } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
+import { useCart } from '../../hooks/useCart';
 
 interface Product {
   id: number;
@@ -18,7 +19,7 @@ interface Product {
 }
 
 const Cart = (): JSX.Element => {
-  // const { cart, removeProduct, updateProductAmount } = useCart();
+  const { cart, removeProduct, updateProductAmount } = useCart();
 
   // const cartFormatted = cart.map(product => ({
   //   // TODO
