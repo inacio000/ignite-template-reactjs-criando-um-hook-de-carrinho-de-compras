@@ -41,7 +41,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
   const cartPrevviousValue = prevCartRef.current ?? cart;
 
   useEffect(() => {
-    if(cartPrevviousValue !== cart) {
+    if (cartPrevviousValue !== cart) {
       localStorage.setItem('@RocketShoes:cart', JSON.stringify(cart))
     }
   }, [cart, cartPrevviousValue]);
@@ -123,7 +123,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
       if (productExist) {
         productExist.amount = amount;
-        setCart(updatedCart);   
+        setCart(updatedCart);
       } else {
         throw Error();
       }
