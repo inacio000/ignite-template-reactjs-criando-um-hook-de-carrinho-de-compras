@@ -9,10 +9,9 @@
 
 > - React JS
 > - TypeScript
-> - HookContext
+> - Styled Component
+> - Hooks
 > - Fake API com JSON Server
-> - Git & Github
-> - Figma
 
 # 💻 Project
 
