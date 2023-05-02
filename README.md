@@ -15,12 +15,18 @@
 > - Figma
 
 # 💻 Project
+
 Creating a hook for shopping cart
 
 # Running the Project
-* Run the Server 
-  * `yarn`
-  * `yarn server`
 
-* Run the frontend
-  * `yarn start`
+- Run the Server
+
+  - `yarn`
+  - `yarn server`
+  - recourses
+    - `/stock`
+    - `/products`
+
+- Run the frontend
+  - `yarn start`
