@@ -38,13 +38,13 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     prevCartRef.current = cart;
   })
 
-  const cartPrevviousValue = prevCartRef.current ?? cart;
+  const cartPreviousValue = prevCartRef.current ?? cart;
 
   useEffect(() => {
-    if (cartPrevviousValue !== cart) {
+    if (cartPreviousValue !== cart) {
       localStorage.setItem('@RocketShoes:cart', JSON.stringify(cart))
     }
-  }, [cart, cartPrevviousValue]);
+  }, [cart, cartPreviousValue]);
 
   const addProduct = async (productId: number) => {
     try {
